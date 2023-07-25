@@ -1,0 +1,9 @@
+{% extends 'core/base.html' %}
+
+{% block title%}Home Page{%endblock%}
+
+{% block NavBar %}
+<nav class = "py-3 px-3 flex border-b border-grey-200 justify-center items-center" >
+    <a href = "{% url 'core:index' %}" class = "text-3xl font-semibold">Home Page</a>
+</nav>
+{% endblock %}
