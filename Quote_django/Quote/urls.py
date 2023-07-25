@@ -4,6 +4,6 @@ from . import views
 app_name = "Quote"
 
 urlpatterns = [
-    path('quote', views.Quote, name="Quote"),
-    path('quotes', views.Quote, name = 'Quotes')
+    path('quote', views.Any_Quote, name="Quote"),
+    path('<str:category>/quote', views.Quote, name = 'Quote_Category')
 ]
