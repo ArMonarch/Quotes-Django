@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+
+.font-lumanosimo{
+    font-family: 'Lumanosimo', cursive;
+}
+.font-lugrasimo{
+    font-family: 'Lugrasimo', cursive;
+}

@@ -1,0 +1,32 @@
+{% extends 'core/base.html' %}
+
+{%load static%}
+
+{% block style %}
+<link rel = 'stylesheet' href="{% static 'style/Google_Font.css' %}">
+{% endblock %}
+
+{%block title%}Quote{%endblock%}
+
+{% block NavBar %}
+<nav class = "py-3 px-3 flex border-b border-grey-200 justify-center items-center" >
+    <a href = "{% url "Quote:Quote" %}" class = "text-3xl font-semibold">Quote</a>
+</nav>
+{% endblock %}
+
+{%block content%}
+<div class = "rounded-xl mx-2 my-4 px-6 py-6">
+    {% if Quote%}
+    <h2 class = "text-4xl text-center uppercase mb-16 mt-4 font-semibold">{{Quote.0.category}}</h2>
+    {% for quote in Quote%}
+    <div class = "px-6 py-6 flex flex-col justify-between">
+        <div class = "px-6 py-6 text-6xl mb-4 text-center font-lugrasimo">{{quote.quote}}</div>
+        <div class="px-6 py-0 mb-96 text-2xl font-lumanosimo">
+            <div class = "text-right">-{{quote.author}}</div>
+        </div>
+    </div>   
+    {% endfor %} 
+    {% endif %}
+</div>
+
+{%endblock%}
