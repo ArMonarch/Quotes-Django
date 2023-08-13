@@ -22,7 +22,7 @@ Before you begin, make sure you have the following prerequisites installed:
 
 * Create a Virtual Environment
 ```bash
-python< Version > -m venv env
+python <Version> -m venv env
 source env/bin/activate
 ```
 
