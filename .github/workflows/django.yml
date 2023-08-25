@@ -30,7 +30,7 @@ jobs:
       run: |
         cd Quote_django
         touch .env
-        echo SECRET_KEY=sevretpassword >>.env
-        echo Quote_Api_key=${{ secret.Quote_Api_Key }} >>.env
+        echo SECRET_KEY=secretpassword >>.env
+        echo Quote_Api_key=${{ secrets.Quote_Api_Key }} >>.env
         cat .env
         python manage.py test
