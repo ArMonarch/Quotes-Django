@@ -30,6 +30,6 @@ jobs:
         cd Quote_django
         touch .env
         echo SECRET_KEY=sevretpassword >>.env
-        echo Quote_Api_key=${{Quote_Api_Key}} >>.env
+        echo Quote_Api_key=${{Secret.Quote_Api_Key}} >>.env
         cat .env
         python manage.py test
