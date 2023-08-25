@@ -48,6 +48,6 @@ python manage.py runserver
 ## Licence
 This project is licensed under [MIT Licence](https://choosealicense.com/licenses/mit/)
 ## Contact
-If you have any questions or need assistance, feel free to contact us at praffylthapa11.email@example.com.
+If you have any questions or need assistance, feel free to contact us at praffylthapa12.email@example.com.
 
 Happy coding!
